@@ -150,6 +150,7 @@ As you can see the table is barely clustered.
 BUT WHY! 
 
 ![Alt Text](https://media.giphy.com/media/l2JhtKtDWYNKdRpoA/giphy.gif) 
+
 Well because it takes time for a table to be optimized
 
  
@@ -257,9 +258,14 @@ ORDER BY C_MKTSEGMENT;
 
 **Now you all try it when you have time and watch the clustering happen ** 
 
+![Alt Text](https://media.giphy.com/media/UqZ4imFIoljlr5O2sM/giphy.gif)
+
 After that you now know what's going on under the hood of the car... better to leave it up to Snowflake. 
 
 *But you do know the best way to load the data so that it saves on cost!*
+
+
+![Alt Text](https://media.giphy.com/media/QyVbrW1xiMJ9Wnhblq/giphy.gif)
 
 
 
