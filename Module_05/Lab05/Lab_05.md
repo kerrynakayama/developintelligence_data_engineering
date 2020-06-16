@@ -1,4 +1,4 @@
-# Lab Four
+# Lab Five
 ## Clustering and Micro-Partitions in Snowflake
 Earlier we talked about clustering and micro-partitions in SnowFlake and what they are.  
 ![Image of a clustered table with 4 micro-partitions](https://github.com/ferninphilly/developintelligence_snowflake/blob/master/Module_04/Lab_04/Images/clustering.png)
