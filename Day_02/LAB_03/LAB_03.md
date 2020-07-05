@@ -1,20 +1,92 @@
 # Lab Three
 ## Caching and Concurrency
 
-We just got done talking about Execution plans and Query profile.  Let's take a look at how Snowflake Caches your data so that you can reuse it.  
+We just got done talking about Execution plans and Query profile.  Let's take a look at the query profile and discuss how you can optimize your execution plans by thinking about how Snowflake Caches your Data.  Once we do a walk through of this we willl also do a walkthrough of how Snowflake keeps ACID in a concurrency Lab.   
 
-As we remember about Snowflake there are 3 layers 
+### First thing is First who remembers the structure of Snowflake? 
+
+There are 3 layers 
 ![Image of 3 layers](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_03/Images/Screen%20Shot%202020-05-22%20at%2012.42.55%20PM.png)
 
+Now that we see that let's set our selves up.  Let's create a data bases where we can play with some sample data and let's also go ahead and create a few virtual data warehouses.  
+*Remember that Snowflake has roles so depending on which role you are using you will be able to see the DB's or use certain Data warehouses*
 
+```sql
+
+CREATE OR REPLACE warehouse usaa_1 WITH 
+warehouse_size ='X-SMALL'
+auto_suspend = 180
+auto_resume = true
+initially_suspended=true;
+
+```
+```sql
+
+CREATE OR REPLACE warehouse usaa_1 WITH 
+warehouse_size ='LARGE'
+auto_suspend = 900
+auto_resume = true
+initially_suspended=true;
+
+```
+It should automatically assign you the Data Warehouse that you just created but if not go ahead and assign it to yourself and pick the USAA Demo DB That we created too. 
+
+ 
 
 ![Image of create table](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_03/Images/1%20create%20table.png)
 
+ 
+```sql
+
+CREATE OR REPLACE TRANSIENT TABLE SUPPLIER AS SELECT * FROM SNOWFLAKE_SAMPLE_DATA.TPCH_SF10000.SUPPLIER;
+
+```
+ 
+```sql
+
+CREATE OR REPLACE TRANSIENT TABLE SUPPLIER2 CLONE SUPPLIER;
+
+```
+
+ 
+ Let's go ahead and SELECT "*" FROM the data 
+ 
+ ```sql
+
+SELECT * FROM SUPPLIER;
+
+```
+ 
+*When I was first doing this lab I selected all from the sample data but it should not matter where you selet your data from* 
+
+Let's take a look at the Query Profile to see this in action.  
+click on the history tab and then click on the query that you just ran.
+The Query Profile will open up to the Details page.  
+
+![Image of copy data over](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_03/Images/20%20update%20before%20update.png) 
+
+Go ahead and click on the Profile tab a the top so that we can see all the processes running.  
+
 ![Image of create table](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_03/Images/2%20cach_select.png)
+
+We can see the Local disk and remote disk io both being used. 
+we can see the scan progress, bytes scanned, 
 
 ![Image of create table](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_03/Images/3%20detailsQP.png)
 
 ![Image of create table](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_03/Images/4%20profileQP.png)
+
+0 bytes have been scanned from the cache
+
+your pruning of the partitions scanned.  We will go more indetail about this in lab 7 when we do micro partitions and clustering
+
+Ok so it takes about 1 and half minutes to run 
+
+great let's run it again! 
+
+![Alt Text](https://media.giphy.com/media/dzvcOaG7QsRd6/giphy.gif)
+
+
 ![Image of create table](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_03/Images/5%20QP%20run%20select%20cache%20CS.png)
 ![Image of create table](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_03/Images/6%20QP%20cache%20CS.png)
 ![Image of create table](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_03/Images/7%20compare%20first%20run.png)
