@@ -4,9 +4,9 @@
 ### What is an ER diagram?
 
 An Entity Relationship (ER) Diagram is a type of flowchart that illustrates how “entities” such as people, objects or concepts relate to each other within a system. ER Diagrams are most often used to design or debug relational databases in the fields of software engineering, business information systems, education and research. Also known as ERDs or ER Models, they use a defined set of symbols such as rectangles, diamonds, ovals and connecting lines to depict the interconnectedness of entities, relationships and their attributes.
-![Image of creating a no cluster table with order](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Module_01/Lab01/IMAGES/34_created_nocluster_order_7min.png)
-![Image of creating a no cluster table with order](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Module_01/Lab01/IMAGES/34_created_nocluster_order_7min.png)
-![Image of creating a no cluster table with order](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Module_01/Lab01/IMAGES/34_created_nocluster_order_7min.png)
+![Image of creating a no cluster table with order](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Module_01/Lab01/IMAGES/erd.jpg)
+![Image of creating a no cluster table with order](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Module_01/Lab01/IMAGES/erd2.png)
+![Image of creating a no cluster table with order](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Module_01/Lab01/IMAGES/erd3.png)
 
 ## What is an ERD good for?
 
@@ -41,7 +41,7 @@ How entities act upon each other or are associated with each other. Think of rel
 Break into groups of 3-5 people 
 Download the data 
 
-![Image of creating a no cluster table with order](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Module_01/Lab01/IMAGES/34_created_nocluster_order_7min.png)
+![Image of creating a no cluster table with order](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_01/LAB_01/IMAGES/Screen%20Shot%202020-07-05%20at%203.53.37%20PM.png)
 
 Figure out what are your core questions that will need to be answered by your data
 
