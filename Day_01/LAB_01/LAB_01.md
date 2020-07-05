@@ -43,25 +43,29 @@ Download the data
 
 ![Image of creating a no cluster table with order](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_01/LAB_01/IMAGES/Screen%20Shot%202020-07-05%20at%203.53.37%20PM.png)
 
-Figure out what are your core questions that will need to be answered by your data
+- Figure out what are your core questions that will need to be answered by your data
 
-The data is a streaming set of data that comes in every 15 minutes 
+- The data is a streaming set of data that comes in every 15 minutes 
 
-What needs to be shown live vs can be batched?
+- What needs to be shown live vs can be batched?
 
-What data should be apart of the FACT tables and what should be put in the DIM tables?
+- What data should be apart of the FACT tables and what should be put in the DIM tables?
 
-Is there anything wrong with the data?
+- Is there anything wrong with the data?
 
-Should there be any QA of the data?
+- Should there be any QA of the data?
 
-Are there any validations that need to be performed?
+- Are there any validations that need to be performed?
 
-Should you Normalize the data? 
+- Should you Normalize the data? 
+
+- Do we have any special data like semi-structure?  
+
+- Does it need to be flattened?
 
 # Present a basic plan of what you plan to do with this data set
 
-* hint - we might revisit this data set later* 
+*hint - we might revisit this data set later* 
 
 
 
