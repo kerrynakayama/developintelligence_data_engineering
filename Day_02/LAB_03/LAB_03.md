@@ -201,47 +201,137 @@ Result should last for 24 hours.  Think how this might be useful for reporting t
 
 ## Concurrency Lab 
 
+Ok let's take the table and run an update statement and then run a second update in another user.  
 
+First update... 
+
+ ```sql
+
+UPDATE SUPPLIER2
+SET S_NATIONKEY = 1200
+WHERE S_NATIONKEY = 12
+
+
+```
 ![Image of create table](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_03/Images/20%20update%20before%20update.png)
-![Image of create table](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_03/Images/21%20update%20after%20update.png)
+
+Second update using a different user and WH... 
+
+ ```sql
+
+UPDATE SUPPLIER
+SET S_NATIONKEY = 1300
+WHERE S_NATIONKEY = 12;
+
+
+```
+
 ![Image of create table](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_03/Images/22%20update%20blocked.png)
+
+
+Ok we can see the first one running and the second one is being blocked 
+
+If we were to kill the first one the second one will start running since it is no longer being blocked.
+
+So we can see that the first one was never completed so only the second one was able to run. 
+
+Now let's try deleting the table.  
+
+Let's run another update... 
+
+ ```sql
+
+UPDATE SUPPLIER2
+SET S_NATIONKEY = 12
+WHERE S_NATIONKEY = 1300
+
+
+```
+And let's delete the table from the other user. 
+
 ![Image of create table](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_03/Images/23%20delete%20table%20.png)
+
+
+ ```sql
+
+DROP TABLE SUPPLIER2
+
+
+```
+Let's go back and check out the first user.  
+
+Well it looks like it is still running...  
+
 ![Image of create table](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_03/Images/24%20update%20running%20but%20will%20fail.png)
-![Image of create table](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_03/Images/25%20update%20running%20.png)
-![Image of create table](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_03/Images/26%20QP%20update%20failed%20.png)
 ![Image of create table](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_03/Images/26%20QP%20update%20happening.png)
+
+
+It can take some time before it let's the user know the table is dropped.  
+
+Ok there we can see the Query failed.. 
+![Image of create table](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_03/Images/26%20QP%20update%20failed%20.png)
+
+We go back to the worksheet and we can see that it failed. 
+
 ![Image of create table](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_03/Images/26%20query%20failed.png)
-![Image of create table](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_03/Images/26%20update%20failed.png)
-![Image of create table](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_03/Images/27%20query%20fail.png)
-![Image of create table](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_03/Images/27%20read%20after%20delete.png)
+
+
+So let's go back and recreate the table and run a SELECT * from the first user rather than an update statement.
+
+We are just reading from the table 
+
+Now in the second user let's delete the table again.
+
 ![Image of create table](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_03/Images/28%20delete%20after%20running%20read%20.png)
+### Do we expect this query to fail? 
+
+![Image of create table](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_03/Images/27%20read%20after%20delete.png)
 ![Image of create table](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_03/Images/29%20read%20works%20.png)
+No it doesn't since it is just a read and it was run before the delete happened.  
+
+Ok last one let's insert some rows into the table after we update the table.  
+
+First step is to update the table
+
+ ```sql
+
+UPDATE SUPPLIER2
+SET S_NATIONKEY = 1300
+WHERE S_NATIONKEY = 12
+
+
+```
+
+![Image of create table](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_03/Images/32%20update%20after%20inserting%20.png)
+
+Second step will be to insert some rows
+ ```sql
+
+INSERT INTO SUPPLIER2
+SELECT * FROM SNOWFLAKE_SAMPLE_DATA.TPCH_SF10000.SUPPLIER WHERE S_NATIONKEY = 12 LIMIT 100 
+
+
+```
 
 ![Image of create table](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_03/Images/31%20insert%20rows%20concurrency%20.png)
-![Image of create table](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_03/Images/32%20update%20after%20inserting%20.png)
+
+Ok this was successful 
+
+Now let's take a look at the table
+
+The first time we select all the table is not done updating all the rows and over 4 million are there with nation key 12 
+
 ![Image of create table](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_03/Images/33%20select%20how%20many%20rows%20before%20update%20is%20complete.png)
+
+Now we will run it after both update are done 
+
 ![Image of create table](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_03/Images/34%20update%20is%20complete%20concurrency.png)
 
-### Let's create some tables
-We will take data that Snowflake already has in the **Snowflake_sample_data**
-First we need to take a look at what the data looks like
-*it is very important to understand the data before you build a table*
-Right click on the table **Customers** and choose *preview data*
-This is what it will look like
-![Image of data in the customer table](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_03/LAB_07/IMAGES/1_describe_table.png)
-We see: 
-- customerkey 
-- name (which is just the custkey with customer in front of it) 
-- address
-- nation key
-- phone number 
-- account balance
-- marketing segemnt 
-- comments 
+There are only 100 rows now with nation key 12 just as we were expecting after the updates.  
 
-**Question** 
-At first glance what might be a good column to cluster the data on?
+### Why didn't the extra 100 rows get updated even though they were in there before the first update finished?? 
 
-![Image of creating the a table without clusters](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_03/LAB_07/IMAGES/2_create_nocluster_table.png)
-This the SQL code 
-```sql
+### Ok So what did we Learn??? 
+
+
+![Alt Text](https://media.giphy.com/media/QyKwWQzeOSl9e/giphy.gif) 
