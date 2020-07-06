@@ -24,3 +24,11 @@
 
 ## Break into groups of no more than 3 people and write the queries 
 
+ - build a normal recursive CTE query
+ - build a recursive CTE that will visually describe the hierarchal nature of the data
+ - Build a CTE to create a Fibonacci Sequence
+ - use connect by instead of a recursive CTE to show hierarchy
+ - visualize the hierarchal structure with a connect by
+
+
+*The data can be downloaded from the Files folder* 
