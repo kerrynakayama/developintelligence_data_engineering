@@ -31,36 +31,35 @@ Build the script for some a really short set of data so that you can use this in
 *The data can be downloaded from the Files folder* 
 
 ![Image of recusive tree](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_05/IMAGES/Screen%20Shot%202020-07-12%20at%206.44.17%20PM.png)
- 
- 
- 
- 
- 
-  
-   
-    
-     
-      
-       
-        
-         
-          
-           
-  
-  
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
 ![Alt Text](https://media.giphy.com/media/FcFs1TW9CMVyw/giphy.gif)
-
- 
-  
-   
-    
-     
-      
-       
-        
-
-
-
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
 ![Image of recusive tree](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_05/IMAGES/cte_without_recursive.png)
 ![Image of recusive tree](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_05/IMAGES/recursive_image.png)
 ![Image of recusive tree](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_05/IMAGES/connect_by.png)
