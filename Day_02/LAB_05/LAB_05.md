@@ -29,3 +29,5 @@ Build the script for some a really short set of data so that you can use this in
 
 
 *The data can be downloaded from the Files folder* 
+
+![Image of recusive tree](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_05/IMAGES/fractal-tree-index-symmetry-recursion-love-tree-thumb.jpg)
