@@ -20,7 +20,7 @@ Build the script for some a really short set of data so that you can use this in
 
 ## Break into groups of no more than 3 people and write the queries 
 
- - build a normal recursive CTE query
+ - create a cte without it being recurvsive that selects all the employees from the engineering dept
  - build a recursive CTE that will visually describe the hierarchal nature of the data
  - use connect by instead of a recursive CTE to show hierarchy
  - visualize the hierarchal structure with a connect by
@@ -31,3 +31,20 @@ Build the script for some a really short set of data so that you can use this in
 *The data can be downloaded from the Files folder* 
 
 ![Image of recusive tree](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_05/IMAGES/Screen%20Shot%202020-07-12%20at%206.44.17%20PM.png)
+
+
+
+
+
+![Alt Text](https://media.giphy.com/media/FcFs1TW9CMVyw/giphy.gif)
+
+
+
+
+
+![Image of recusive tree](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_05/IMAGES/cte_without_recursive.png)
+![Image of recusive tree](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_05/IMAGES/recursive_image.png)
+![Image of recusive tree](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_05/IMAGES/connect_by.png)
+![Image of recusive tree](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_05/IMAGES/connect_by_image.png)
+![Image of recusive tree](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_05/IMAGES/fibi_query.png)
+
