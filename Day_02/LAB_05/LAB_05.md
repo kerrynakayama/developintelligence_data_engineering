@@ -8,11 +8,7 @@
 
 
 ### I want you to ... 
- - build a normal recursive CTE query 
- - build a recursive CTE that will visually describe the hierarchal nature of the data 
- - Build a CTE to create a Fibonacci Sequence
- - use connect by instead of a recursive CTE to show hierarchy
- - visualize the hierarchal structure with a connect by 
+Build the script for some a really short set of data so that you can use this in the future
  
 
 ![Image of fibi snail](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_02/LAB_05/IMAGES/fibi.png)
@@ -26,9 +22,10 @@
 
  - build a normal recursive CTE query
  - build a recursive CTE that will visually describe the hierarchal nature of the data
- - Build a CTE to create a Fibonacci Sequence
  - use connect by instead of a recursive CTE to show hierarchy
  - visualize the hierarchal structure with a connect by
+ 
+ Bonus -  Build a CTE to create a Fibonacci Sequence
 
 
 *The data can be downloaded from the Files folder* 
