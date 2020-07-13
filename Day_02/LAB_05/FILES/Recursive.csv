@@ -1,0 +1,33 @@
+﻿Employee_id,Employee_name,Department,Start_date,Title,Manager_id
+12,Al Engemann,Engineering,4/19/18,lead analyst,9
+4,Alana Robinson,Product,2/8/17,Director Product,1
+2,Alissa Green ,HR,1/5/17,Head of HR,7
+14,Bryan Striet,Engineering,4/20/18,analyst ,12
+25,Carolyn Quelly,Engineering,11/5/18,manager IT,3
+6,Casey Jo,Finance,3/10/17,Head of Accounting,7
+24,Cassie Chernin,Finance,8/4/18,accountant,6
+32,Farrell Tobo,Engineering,10/12/19,data engineer,15
+30,Greg Lemiska,Product,10/12/19,product manager,4
+3,Issa Nicolay,Engineering,1/5/17,VP Engineering,1
+23,Jaimy Clark,HR,5/3/18,director of people,2
+20,Jesus Lio,Engineering,5/2/18,QA,17
+22,John Kim,HR,5/2/18,recruiting lead,2
+19,Katelyn Inman,Engineering,5/2/18,QA,17
+8,Kianna Moore,Product,5/7/17,VP Product,1
+1,Kim Lord,Product,1/5/17,CEO,
+11,Kristy Cummins,Engineering,3/14/18,BI manager,9
+5,Nate Graham,Product,2/9/17,VP Design,1
+7,Nathan Polzin,Finance,4/8/17,CFO,1
+26,Oleg Baranovsky,Engineering,2/6/19,IT,25
+17,Patrick Putnam,Engineering,4/24/18,lead QA,3
+15,Patrick Striet,Engineering,4/20/18,lead engineer,3
+9,Peter Attardo ,Engineering,9/13/17,Director Analytics,3
+27,Ron Meltramo,Engineering,5/10/19,IT,25
+28,Sara Strickland,HR,8/11/19,recruiter,22
+31,Steve Lang,Product,10/12/19,product manager,4
+29,Susan Chen,Product,8/11/19,product manager,4
+16,Tracey Lipnicki,Engineering,4/20/18,engineer,15
+18,Troy Donnell,Engineering,4/28/18,QA,17
+10,Vitoria Pomberio,Engineering,2/15/18,Bi analyst,11
+13,Wesley Thatcher,Engineering,4/20/18,analyst ,12
+21,Zach Gibson,Engineering,5/2/18,data scientist,9
