@@ -41,7 +41,20 @@ How entities act upon each other or are associated with each other. Think of rel
 ### Dim tables
 
 ### What are some Questions that need to be answered by the DB?
-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
 
 ## Lab Time 
 
