@@ -78,6 +78,19 @@ Download the data
 - How about the DIM tables 
 
 ### Will your ERD be Snowflake or Star Schema 
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
 
 
 
