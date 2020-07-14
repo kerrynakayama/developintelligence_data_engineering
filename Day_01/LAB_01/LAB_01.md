@@ -52,11 +52,23 @@ Download the data
 
 - Figure out what are your core questions that will need to be answered by your data
 
-- The data is a streaming set of data that comes in every 15 minutes 
-
-- What needs to be shown live vs can be batched?
+### Write 3 questions you are trying to solve and create an ERD model that will help to answer it
 
 - What data should be apart of the FACT tables and what should be put in the DIM tables?
+
+### For the ERD model you will need a central FACT table and surrounding DIM tables  
+
+- Should you Normalize the data? 
+
+### In the ERD model do you want your Fact table to be completely normalized (only contain IDs) 
+
+- How about the DIM tables 
+
+### Will your ERD be Snowflake or Star Schema 
+
+
+
+### BONUS Question to think of if you complete the ERD design 
 
 - Is there anything wrong with the data?
 
@@ -64,15 +76,28 @@ Download the data
 
 - Are there any validations that need to be performed?
 
-- Should you Normalize the data? 
-
 - Do we have any special data like semi-structure?  
 
 - Does it need to be flattened?
 
-# Present a basic plan of what you plan to do with this data set
+
+You have 30 Mins to work on this in your groups.  I will drop in each breakout group to answer any questions that you all might have.  Once we come back together after lunch be ready to ... 
+
+## Present a basic plan of what you plan to do with this data set
+
+
+-
+- 
+-
 
 *hint - we might revisit this data set later* 
+
+- 
+- 
+- 
+- 
+- 
+More examples
 
 ![Image of creating a no cluster table with order](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_01/LAB_01/IMAGES/Screen%20Shot%202020-07-02%20at%209.46.21%20AM.png)
 ![Image of creating a no cluster table with order](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_01/LAB_01/IMAGES/Screen%20Shot%202020-07-02%20at%209.47.32%20AM.png)
