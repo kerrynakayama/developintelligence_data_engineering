@@ -108,7 +108,7 @@ SELECT * FROM
 
 
    
-![Alt Text](https://media.giphy.com/media/krM6ANSNvFg52/giphy.gif) 
+![Alt Text](https://media.giphy.com/media/krM6ANSNvFg52/giphy.gif) ![Alt Text](https://media.giphy.com/media/krM6ANSNvFg52/giphy.gif) ![Alt Text](https://media.giphy.com/media/krM6ANSNvFg52/giphy.gif) 
  
 ### Count how many suppliers are from each nation and order it ascending  (a-z) alphabetically by nation 
 ```sql
