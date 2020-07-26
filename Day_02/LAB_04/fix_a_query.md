@@ -191,7 +191,7 @@ AND H.days_active <= T.days_active-1
 ## Did you add comments???
 ## did you use long form aliases???
 
-![Alt Text](https://media.giphy.com/media/VbnUQpnihPSIgIXuZv/giphy.gif) 
+![Alt Text](https://media.giphy.com/media/10et8h1EjvyNSE/giphy.gif) 
  
 ### Try again 
 
