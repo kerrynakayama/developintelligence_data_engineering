@@ -121,7 +121,8 @@ LEFT JOIN "SNOWFLAKE_SAMPLE_DATA"."TPCH_SF10000"."NATION" F
 ON A.S_NATIONKEY = F.N_NATIONKEY
 GROUP BY 4 
 ORDER BY 9
-   
+```
+
 ![Alt Text](https://media.giphy.com/media/h6g5FA1zhKswcRsEi7/giphy.gif)
  
  
