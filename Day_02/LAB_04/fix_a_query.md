@@ -57,7 +57,7 @@ ON A.L_SUPPKEY = D.S_SUPPKEY
 ![Alt Text](https://media.giphy.com/media/Yq7n1sakPfO1d0O9Wn/giphy.gif) 
  
  ### To answer the following question do you need all these joins...
- ### How many items were supplied by the United States that were shipped by regular air in 1998 
+ ### How many orders were supplied by the United States that were shipped by regular air in 1998 
   
 ```sql
 
@@ -75,7 +75,7 @@ ON A.S_NATIONKEY = F.N_NATIONKEY
 
 ```
 ### Wait let's make the question a bit harder by adding one more level to it...
-### How many items were supplied by the United States that were shipped by regular air in 1998 and the total order price was over 50K dollars
+### How many orders were supplied by the United States that were shipped by regular air in 1998 and the total order price was over 50K dollars
  
  ```sql
 
