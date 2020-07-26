@@ -187,3 +187,11 @@ AND H.days_active <= T.days_active-1
 ![Alt Text](https://media.giphy.com/media/FVMz65wDVfC2Q/giphy.gif)
 
 
+## That last one was fun... did you indent???
+## Did you add comments???
+## did you use long form aliases???
+
+![Alt Text](https://media.giphy.com/media/VbnUQpnihPSIgIXuZv/giphy.gif) 
+ 
+### Try again 
+
