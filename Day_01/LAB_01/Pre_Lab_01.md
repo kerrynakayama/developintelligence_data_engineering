@@ -33,7 +33,7 @@ When you meet with your product own have clear quesitons that you would like to 
 - country the transaction took place
 - 
 - 
-- 
+![Image of creating a no cluster table with order](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_01/LAB_01/IMAGES/Screen%20Shot%202020-07-05%20at%203.53.37%20PM.png)
 ### You all will break into teams and come up with quesitons for 5 min.  
 ![Alt Text](https://media.giphy.com/media/l2Jec1o4kpDDjThg4/giphy.gif) 
 
