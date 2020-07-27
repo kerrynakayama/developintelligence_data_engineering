@@ -50,22 +50,16 @@ How entities act upon each other or are associated with each other. Think of rel
 -
 -
 -
--
--
--
--
--
-
 ## Lab Time 
 
-Break into groups of 3-5 people 
-Download the data 
+Break back into your groups 
+
 
 ![Image of creating a no cluster table with order](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_01/LAB_01/IMAGES/Screen%20Shot%202020-07-05%20at%203.53.37%20PM.png)
 
 - Figure out what are your core questions that will need to be answered by your data
-
-### Write 3 questions you are trying to solve and create an ERD model that will help to answer it
+- Think about the questions you asked your product owner 
+### Write at least 3 itmes you are trying to solve and create an ERD model that will help to answer it
 
 - What data should be apart of the FACT tables and what should be put in the DIM tables?
 
@@ -107,7 +101,7 @@ Download the data
 - Does it need to be flattened?
 
 
-You have 30 Mins to work on this in your groups.  I will drop in each breakout group to answer any questions that you all might have.  Once we come back together after lunch be ready to ... 
+You have 30- 40  Mins to work on this in your groups.  I will drop in each breakout group to answer any questions that you all might have.  Once we come back together after lunch be ready to ... 
 
 ## Present a basic plan of what you plan to do with this data set
 
