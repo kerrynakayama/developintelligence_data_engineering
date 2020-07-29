@@ -91,7 +91,7 @@ Tests are going to be the items that you set up whether they are Schema tests or
 - 
 dbt.yml will be where you can find your dbt.yml files.  These will basically be your config files that will be used to create the order of your models and tests.  There is also a section called models in the yml file that dictates whether the item being created in your data warehouse will be a materialized views or table.  This can also be over written from code directly in your model
 - 
-![Alt Text](https://media.giphy.com/media/du444G2zanbAnyYRcZ/giphy.gif) 
+![Alt Text](https://media.giphy.com/media/40DRc0W00UbgQ/giphy.gif) 
 
 -
  
