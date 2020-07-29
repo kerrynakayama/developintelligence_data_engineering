@@ -51,7 +51,8 @@ So this is what it will look like...
 -
 -
 You will get a bunch of folders created in with .gitkeep files in them.  
-*What is .gitkeep????* 
+-
+### *What is .gitkeep????* 
 
 -
 -
