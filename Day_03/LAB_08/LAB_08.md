@@ -21,6 +21,7 @@
  
  
 ![Alt Text](https://media.giphy.com/media/Q87XzlKSuHqnT2FEHE/giphy.gif)
+
 -
 -
 -
@@ -58,7 +59,9 @@ You will get a bunch of folders created in with .gitkeep files in them.
 
 -
 -
+
 ![Alt Text](https://media.giphy.com/media/5wWf7HfQJzA8cze6CWc/giphy.gif)
+
 -
  
 **Basically it is just a place holder since git repositories do not allow for empty folders**
@@ -91,6 +94,7 @@ Tests are going to be the items that you set up whether they are Schema tests or
 - 
 dbt.yml will be where you can find your dbt.yml files.  These will basically be your config files that will be used to create the order of your models and tests.  There is also a section called models in the yml file that dictates whether the item being created in your data warehouse will be a materialized views or table.  This can also be over written from code directly in your model
 - 
+
 ![Alt Text](https://media.giphy.com/media/40DRc0W00UbgQ/giphy.gif) 
 
 -
@@ -107,7 +111,8 @@ If we were going to do this in dbt we would create a new model in the models fol
 
 Now as much as I would like you all to get a perfectly working script ... I'm more interested in the idea of understanding how dbt works.  So for the bare minimum mock up a CTE with at least 4 staging tables to ultimately build one table based on joins at the end of your CTE. 
 -
-![Alt Text](https://media.giphy.com/media/9DnNlrVZhlNZDEs9ar/giphy.gif) 
+
+![Alt Text](https://media.giphy.com/media/3kruPvGDcRnY6hmzp0/giphy.gif) 
 
 ## Now that we have created the first model let's create refferences back to this model
  
