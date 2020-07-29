@@ -112,12 +112,12 @@ If we were going to do this in dbt we would create a new model in the models fol
 Now as much as I would like you all to get a perfectly working script ... I'm more interested in the idea of understanding how dbt works.  So for the bare minimum mock up a CTE with at least 4 staging tables to ultimately build one table based on joins at the end of your CTE. 
 -
 
-![Alt Text](https://media.giphy.com/media/3kruPvGDcRnY6hmzp0/giphy.gif) 
+
 
 ## Now that we have created the first model let's create refferences back to this model
  
-![Alt Text](https://media.giphy.com/media/3kruPvGDcRnY6hmzp0/giphy.gif) 
 
+![Alt Text](https://media.giphy.com/media/e2E5DEXDNt280/giphy.gif)
 
 Take some of your intermediate staging tables and create a new file with that staging table name as the file.  Copy the select statement into this new .sql file and remove the orginal select from your CTE.  Now you are still refferencing this in your CTE so you will need to create a refference back to the new .sql file.  Write SELECT * FROM using the double curly brackets with the word ref parenthesis and the name of your new model.  Close this out with it's matching paranthesis and double brackets.  
 -
