@@ -90,12 +90,12 @@ Tests are going to be the items that you set up whether they are Schema tests or
 dbt.yml will be where you can find your dbt.yml files.  These will basically be your config files that will be used to create the order of your models and tests.  There is also a section called models in the yml file that dictates whether the item being created in your data warehouse will be a materialized views or table.  This can also be over written from code directly in your model
 - 
 
-![Alt Text](https://media.giphy.com/media/XDd5b7NUbS1C1PMjUl/giphy.gif_
+![Alt Text](https://media.giphy.com/media/XDd5b7NUbS1C1PMjUl/giphy.gif)
 dbt requires raw data to be in database
 -
  
 
-#### First create a basic CTE script that breaks up your large transaction table into at least one table of your erd models.
+## First create a basic CTE script that breaks up your large transaction table into at least one table of your erd models.
 - 
 
 If we were going to do this in dbt we would create a new model in the models folder with a .sql file type and copy or completely write the script into this file
@@ -105,7 +105,7 @@ Now as much as I would like you all to get a perfectly working script ... I'm mo
 -
 ![Alt Text](https://media.giphy.com/media/9DnNlrVZhlNZDEs9ar/giphy.gif) 
 
-#### Now that we have created the first model let's create refferences back to this model
+## Now that we have created the first model let's create refferences back to this model
  
 ![Alt Text](https://media.giphy.com/media/3kruPvGDcRnY6hmzp0/giphy.gif) 
 
@@ -113,7 +113,7 @@ Now as much as I would like you all to get a perfectly working script ... I'm mo
 Take some of your intermediate staging tables and create a new file with that staging table name as the file.  Copy the select statement into this new .sql file and remove the orginal select from your CTE.  Now you are still refferencing this in your CTE so you will need to create a refference back to the new .sql file.  Write SELECT * FROM using the double curly brackets with the word ref parenthesis and the name of your new model.  Close this out with it's matching paranthesis and double brackets.  
 -
 
-#### You have just created a staged model! 
+## You have just created a staged model! 
  
 ![Alt Text](https://media.giphy.com/media/kbQsZIE1OnBgmihgCl/giphy.gif) 
  
