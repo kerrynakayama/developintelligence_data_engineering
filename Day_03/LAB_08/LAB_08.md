@@ -15,7 +15,9 @@
 # The idea of this Lab is to figure out how you will use the funtionality of dbt to benefit you with the data that we have been working on all week
  - 
  ![Alt Text](https://media.giphy.com/media/Zsx8ZwmX3ajny/giphy.gif)
-#### If you choose to click on the link you will get about 20+ emails from dbt... again you do not need dbt to do this lab and understand how it will work.  
+  
+   
+### If you choose to click on the link you will get about 20+ emails from dbt... again you do not need dbt to do this lab and understand how it will work.  
  
  
 ![Alt Text](https://media.giphy.com/media/Q87XzlKSuHqnT2FEHE/giphy.gif)
