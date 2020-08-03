@@ -28,27 +28,52 @@
 -
 -
 ### Let's do a basic run through of the setup 
+-
+-
+-
+#### When you first login if this the first time running dbt it will ask you to create a project.  If you login from the link I sent then most of the setup is already complete.  You will only have to add the loging credentials to your DB 
+ 
  
 ![dbt_github](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_03/LAB_08/IMAGES/newproject.png)
 
+#### once you pick you project it will take you directly to the DB connector screen.  Choose the correct DB to work with.  dbt has a tutorial that connects you to Big Query.  I set you all up with Snowflake since that is the Data warehouse you will be working with.  
+
 ![dbt_github](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_03/LAB_08/IMAGES/database.png)
+
+#### This information should already be ready to go except your personal credentials
+#### If you were to set this up from scratch you would need to add the 
+- account 
+- role 
+- database
+- warehouse you want dbt to run on 
+- and you can choose to keep alive (you will use this if you have some sort of scheduler that runs later)
+- 
 
 ![dbt_github](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_03/LAB_08/IMAGES/database2.png)
 
+#### Use your user name and new password that you all should have set up for Snowflake.  
+
 ![dbt_github](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_03/LAB_08/IMAGES/database3.png)
+
+#### dbt creates a schema that it will put your tables and/or views into.  The default is dbt_username.  For this lab I have the teams setup to put it into dbt_staging.  
+
 
 ![dbt_github](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_03/LAB_08/IMAGES/repos.png)
 
+#### The Repo set up gives you 3 options 
+- managed dbt repository 
+- github repository 
+- or another git repository that you give the URL 
+
+#### I created a repository for each group in github for the lab.  It should have read and write privileges from dbt set up by connecting the 3rd party connection.
+
 ![dbt_github](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_03/LAB_08/IMAGES/init.png)
+
+#### Be sure that when you are setting up the repository that you do not initialize it with a readme or .gitignore.  dbt has its own init that will create all the folders that you will need to start out with.  More can be added or deleted. We will go over them in a few mins.
 
 ![dbt_github](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_03/LAB_08/IMAGES/init2.png) 
 
-![dbt_github](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_03/LAB_08/IMAGES/init3.png) 
- 
- 
- 
- 
- 
+
  
  
 ### Let's take a look at what happens after you run init and you connect the data source and git repository 
