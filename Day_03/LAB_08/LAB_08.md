@@ -29,11 +29,21 @@
 -
 ### Let's do a basic run through of the setup 
  
- to be completed this weekend when I do the setup of dbt 
- This can be done via dbt cloud which is pretty much laid out for you as you walk through dbt 
- You can also do it through the command line interface (CLI) 
- 
- 
+![dbt_github](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_03/LAB_08/IMAGES/newproject.png)
+
+![dbt_github](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_03/LAB_08/IMAGES/database.png)
+
+![dbt_github](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_03/LAB_08/IMAGES/database2.png)
+
+![dbt_github](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_03/LAB_08/IMAGES/database3.png)
+
+![dbt_github](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_03/LAB_08/IMAGES/repos.png)
+
+![dbt_github](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_03/LAB_08/IMAGES/init.png)
+
+![dbt_github](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_03/LAB_08/IMAGES/init2.png) 
+
+![dbt_github](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_03/LAB_08/IMAGES/init3.png) 
  
  
  
