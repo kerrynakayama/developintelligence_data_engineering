@@ -14,12 +14,14 @@ First off hopefully your product owner has a map of what they are looking to acc
 - 
 - 
 When you meet with your product own have clear quesitons that you would like to know how you can help to shape the product.
+
 ![Alt Text](https://media.giphy.com/media/XHVmD4RyXgSjd8aUMb/giphy.gif) 
+
 ### In this case your product is creating the tables so that analysis can be done on the transactions that are incoming.  
 - 
 ![Alt Text](https://media.giphy.com/media/3o7aTHtiZ0FBhnJTag/giphy.gif) 
 #### The transactions are event based on everytime an invoice is created.  It will contain ...
-- Incoice id
+- Invoice id
 - Stock code of the item that is on the invoice
 - description of the stock item **hint - check through what these might be first as they might point out errors in the data **
 - Quantity - number of stock items being purchased ... or something else 
