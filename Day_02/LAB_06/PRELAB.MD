@@ -28,4 +28,4 @@
 ![Image of creating a no cluster table with order](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_01/LAB_01/IMAGES/erd2.png)
 
 ### You will Use this tomorrow in dbt so I thought it would be helpful to get a head start.  
-![dbt_github](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_03/LAB_08/IMAGES/dbt1.png)
+![dbt_github](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_03/LAB_08/IMAGES/init2.png) 
