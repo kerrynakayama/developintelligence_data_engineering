@@ -16,8 +16,7 @@
 - 
 ![Image of creating a no cluster table with order](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_01/LAB_01/IMAGES/Screen%20Shot%202020-07-05%20at%203.53.37%20PM.png)
 
-![Image of creating a no cluster table with order](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_01/LAB_01/IMAGES/erd.jpg)
-![Image of creating a no cluster table with order](https://github.com/kerrynakayama/developintelligence_data_engineering/blob/master/Day_01/LAB_01/IMAGES/erd2.png)
+
 
 -
 -
