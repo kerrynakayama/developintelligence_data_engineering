@@ -28,6 +28,13 @@
 ![Alt Text](https://media.giphy.com/media/l1J9LMNeWISnddECA/giphy.gif)
 ## Create at least one macro
 
+-
+-
+-
+-
+
+#### In case you want a reminder I created this CTE if you would like to use it
+
 ```sql
 
 create or replace sequence seq_cust start = 1 increment = 1;
