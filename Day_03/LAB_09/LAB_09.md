@@ -35,6 +35,8 @@
 
 #### In case you want a reminder I created this CTE if you would like to use it
 
+![Alt Text](https://media.giphy.com/media/a0g5I2b3COsmc/giphy.gif) 
+
 ```sql
 
 create or replace sequence seq_cust start = 1 increment = 1;
