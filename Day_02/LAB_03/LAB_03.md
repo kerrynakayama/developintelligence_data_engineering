@@ -182,7 +182,7 @@ Now let's run the SELECT * again. So since we update the table it now has to pul
 If there are any changes Snowflake will not use the Cached results.
 Run all changes and update first before running select queries to check work.  This will get expensive! 
 
-![Alt Text](https://media.giphy.com/media/12DNooI6je8AUw/giphy.gif) 
+![Alt Text](https://media.giphy.com/media/BI2fB0DCdz2lG/giphy.gif) 
 
 
 ### Will it be shared across users? 
