@@ -13,7 +13,7 @@ Now that we see that let's set our selves up.  Let's create a data bases where w
 
 ```sql
 
-CREATE OR REPLACE warehouse usaa_1 WITH 
+CREATE OR REPLACE warehouse lab3 WITH 
 warehouse_size ='X-SMALL'
 auto_suspend = 180
 auto_resume = true
@@ -22,7 +22,7 @@ initially_suspended=true;
 ```
 ```sql
 
-CREATE OR REPLACE warehouse usaa_1 WITH 
+CREATE OR REPLACE warehouse lab3 WITH 
 warehouse_size ='LARGE'
 auto_suspend = 900
 auto_resume = true
@@ -38,7 +38,7 @@ It should automatically assign you the Data Warehouse that you just created but 
  
 ```sql
 
-CREATE OR REPLACE TRANSIENT TABLE SUPPLIER AS SELECT * FROM SNOWFLAKE_SAMPLE_DATA.TPCH_SF10000.SUPPLIER;
+CREATE OR REPLACE TRANSIENT TABLE SUPPLIER AS SELECT * FROM SNOWFLAKE_SAMPLE_DATA.TPCH_SF1000.SUPPLIER;
 
 ```
  
